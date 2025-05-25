@@ -1,0 +1,17 @@
+# JWildfire 8.50
+
+Este repositório contém os arquivos do JWildfire 8.50, um software multi-plataforma focado na criação e processamento de imagens, possivelmente fractais ou arte generativa.
+
+O JWildfire é uma aplicação baseada em Java que pode ser executada em diversos sistemas operacionais, incluindo Windows, macOS e Linux.
+
+**Principais Características:**
+
+*   **Multi-plataforma:** Suporte para Windows, macOS e Linux.
+*   **Lançador Java:** Utiliza um lançador dedicado (`j-wildfire-launcher.jar`) para gerenciar a inicialização do software e garantir a alocação adequada de memória, essencial para a renderização de imagens em alta resolução.
+*   **Denoisers Integrados:** Inclui suporte para denoisers baseados em inteligência artificial, como o Intel Open Image Denoiser (OIDN) e o NVidia OptiX Denoiser. Essas ferramentas ajudam a reduzir o ruído em imagens renderizadas, otimizando o tempo de renderização.
+
+Para mais detalhes sobre como iniciar o JWildfire, solucionar problemas ou obter suporte, consulte os arquivos README na pasta raiz do projeto, como `README_LAUNCHING_JWILDFIRE.txt`, `README_LINUX.txt` e `README_SUPPORT.txt`.
+
+---
+
+Este README foi gerado automaticamente com base na análise dos arquivos do projeto. 
