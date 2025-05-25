@@ -10,7 +10,23 @@ O JWildfire é uma aplicação baseada em Java que pode ser executada em diverso
 *   **Lançador Java:** Utiliza um lançador dedicado (`j-wildfire-launcher.jar`) para gerenciar a inicialização do software e garantir a alocação adequada de memória, essencial para a renderização de imagens em alta resolução.
 *   **Denoisers Integrados:** Inclui suporte para denoisers baseados em inteligência artificial, como o Intel Open Image Denoiser (OIDN) e o NVidia OptiX Denoiser. Essas ferramentas ajudam a reduzir o ruído em imagens renderizadas, otimizando o tempo de renderização.
 
+## Exemplos de Arte Gerada
+
+Aqui estão alguns exemplos visuais do tipo de arte que pode ser criada com o JWildfire:
+
+![Descrição da Imagem 1](caminho/para/sua/imagem1.png)
+
+![Descrição da Imagem 2](caminho/para/sua/imagem2.jpg)
+
+![Descrição da Imagem 3](caminho/para/sua/imagem3.gif)
+
+---
+
 Para mais detalhes sobre como iniciar o JWildfire, solucionar problemas ou obter suporte, consulte os arquivos README na pasta raiz do projeto, como `README_LAUNCHING_JWILDFIRE.txt`, `README_LINUX.txt` e `README_SUPPORT.txt`.
+
+## Manual Online
+
+Você pode visualizar o manual completo do JWildfire em formato HTML [aqui](index-manual.html).
 
 ---
 
