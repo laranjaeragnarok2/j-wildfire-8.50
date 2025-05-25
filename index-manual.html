@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Usuário JWildfire - Navegação Simplificada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h1 { font-size: 2.2em; }
+        h2 { font-size: 1.8em; }
+        h3 { font-size: 1.4em; }
+        h4 { font-size: 1.2em; }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        .table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .table-of-contents ul li {
+            margin-bottom: 5px;
+        }
+        .table-of-contents ul li a {
+            font-weight: bold;
+        }
+        .citation {
+            font-size: 0.8em;
+            color: #666;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Manual do Usuário JWildfire</h1>
+
+        <div class="table-of-contents">
+            <h2>Sumário</h2>
+            <ul>
+                <li><a href="#introducao">1. Introdução</a></li>
+                <li><a href="#menu-principal">2. Menu Principal</a></li>
+                <li><a href="#editor-fractal-chama">3. Editor de Fractal-Chama</a>
+                    <ul>
+                        <li><a href="#area-visualizacao-editor">3.1. Área de Visualização/Editor</a>
+                            <ul>
+                                <li><a href="#botoes-rapidos-topo">3.1.1. Botões Rápidos na parte superior da área de visualização</a></li>
+                                <li><a href="#botoes-rapidos-direita">3.1.2. Botões rápidos à direita da área de visualização</a></li>
+                                <li><a href="#botoes-rapidos-esquerda">3.1.3. Botões rápidos à esquerda da área de visualização</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#faixa-miniaturas">3.2. Faixa de Miniaturas</a></li>
+                        <li><a href="#configuracoes-chama">3.3. Configurações da chama</a>
+                            <ul>
+                                <li><a href="#aba-camera">3.3.1. Aba da Câmera</a></li>
+                                <li><a href="#aba-dof-bokeh">3.3.2. Aba DOF/Bokeh</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <h2 id="introducao">1. Introdução</h2>
+        <p>Bem-vindo ao JWildfire e a este manual do usuário! O objetivo deste livro é descrever as inúmeras funções do software e explicar como elas funcionam. Após mais de 10 anos de desenvolvimento, há muitas funções, então o livro é mais um material de referência do que algo que você leria do começo ao fim. Este manual não tenta ensinar como criar fractais e não inclui materiais práticos ou exemplos. Isso seria demais para este manual e fará parte de uma espécie de "livro de exercícios" que tenho planos de escrever. O autor espera que este livro ajude você a se divertir mais com o software e alcançar os resultados que procura. [cite: 1]</p>
+
+        <h2 id="menu-principal">2. Menu Principal</h2>
+        <p>Após iniciar o programa, o Editor de Fractal-Chama é aberto automaticamente, pois é o módulo principal do JWildfire. Existem módulos adicionais e funções úteis que podem ser acessados pelo Menu Principal. O Menu Principal contém os seguintes itens: [cite: 2]</p>
+        <ul>
+            <li><strong>Arquivo (File):</strong> algumas funções relacionadas a arquivos. [cite: 2]
+                <ul>
+                    <li><strong>Abrir chama (Open flame):</strong> abre um arquivo de chama para ser editado no Editor de Fractal-Chama. [cite: 2]</li>
+                    <li><strong>Abrir imagem (Open image):</strong> abre um arquivo de imagem e o exibe em uma janela separada. [cite: 2]</li>
+                    <li><strong>Sair do JWildfire (Quit JWildfire):</strong> sai do programa. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>Janela (Window):</strong> para abrir/fechar os vários módulos do JWildfire (um módulo aberto é indicado por uma pequena marca de seleção à esquerda do item do menu. Se não estiver visível, pode estar em segundo plano). [cite: 2]
+                <ul>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Editor: abre o Editor de Fractal-Chama. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> MutaGen: abre o módulo MutaGen. [cite: 11]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Renderizador interativo (Interactive renderer): abre o renderizador interativo. [cite: 8]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Navegador de chamas (Flame browser): abre o navegador de chamas. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Criador de Filmes Fácil (Easy movie maker): abre o Criador de Filmes Fácil. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Chamas dançantes (Dancing flames): abre o módulo Chamas dançantes. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Renderizador em lote (Batch renderer): abre o renderizador em lote. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Renderizador de colcha (Quilt renderer): abre o renderizador de colcha. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Gerador de malha (Mesh generator): abre o gerador de malha. [cite: 2]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Renderizador GPU (GPU render): abre o renderizador GPU. [cite: 10]</li>
+                    <li><strong>Chamas de Fractal (Fractal flames):</strong> Ajuda (Help): abre um pop-up que exibe algumas informações úteis sobre chamas de fractal. [cite: 2]</li>
+                    <li><strong>IFlames:</strong> abre o módulo IFlames. [cite: 18]</li>
+                    <li><strong>Processamento de imagem (Image processing):</strong> abre um pop-up que oferece algumas possibilidades de processamento de imagem. [cite: 2]</li>
+                    <li><strong>Explorador de fórmulas (Formula explorer):</strong> abre um pop-up que contém um plotter de função simples. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>Configurações (Settings):</strong> opções para personalizar o programa. [cite: 2]
+                <ul>
+                    <li><strong>Tema da UI (UI Theme) (Aparência e Comportamento - Look and Feel):</strong> abre um pop-up para mudar o tema da interface do usuário de todo o programa. [cite: 2]</li>
+                    <li><strong>Preferências (Preferences):</strong> abre a janela de Preferências. [cite: 22]</li>
+                    <li><strong>Configurações de inicialização (Startup settings) (Steam):</strong> disponível apenas na versão Steam: abre uma janela para editar as opções de inicialização para a Edição Steam do JWildfire. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>Ajuda (Help):</strong> algumas informações úteis e a documentação oficial. [cite: 2]
+                <ul>
+                    <li><strong>Manual do usuário (User manual):</strong> o manual oficial do usuário (o arquivo que você está lendo atualmente). [cite: 2]</li>
+                    <li><strong>Informações do sistema (System information):</strong> abre um pop-up para exibir algumas informações úteis sobre seu sistema relacionadas ao JWildfire, por exemplo, memória disponível. [cite: 2]</li>
+                    <li><strong>Bem-vindo ao JWildfire (Welcome to JWildfire):</strong> um antigo diálogo de boas-vindas com alguns links úteis, não disponível na Edição Steam do JWildfire. [cite: 2]</li>
+                    <li><strong>Lista de mudanças (List of changes):</strong> exibe a lista de mudanças em constante crescimento. É uma leitura recomendada após cada lançamento do software. [cite: 2]</li>
+                    <li><strong>Registro de mensagens (Message log):</strong> exibe um registro de todas as mensagens (de erro) que ocorreram durante a sessão atual. Você também pode encontrar uma cópia dessas mensagens no arquivo JWildfire.log em sua pasta inicial. [cite: 2]</li>
+                    <li><strong>Renderização GPU (GPU rendering):</strong> alguma documentação compacta sobre renderização GPU. [cite: 12]</li>
+                    <li><strong>Denoisers de Post-Processamento de IA Suportados (Supported AI-Post-Denoisers):</strong> alguma documentação compacta sobre denoisers baseados em IA. [cite: 2]</li>
+                    <li><strong>Dica do dia (Tip of the day):</strong> um pequeno pop-up que mostra pequenas dicas na inicialização do JWildfire. [cite: 2]</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Para executar funções do software sem a interface do usuário, também existe uma CLI (interface de linha de comando) que atualmente está limitada à renderização e à geração de chamas aleatórias. [cite: 2]</p>
+
+        <h2 id="editor-fractal-chama">3. Editor de Fractal-Chama</h2>
+        <p>O Editor de Fractal-Chama é o coração do JWildfire. Aqui você cria chamas aleatórias ou ajusta sua arte. Ele consiste nos seguintes elementos: [cite: 2]</p>
+        <ol>
+            <li>Área de Visualização/Editor (Preview/Editor Area). [cite: 2]</li>
+            <li>Faixa de miniaturas (Thumbnail ribbon). [cite: 2]</li>
+            <li>Transformações e Scripts (Transformations and Scripts). [cite: 6]</li>
+            <li>Configurações da chama (Flame settings). [cite: 2]</li>
+            <li>Funções globais (Global functions). [cite: 7]</li>
+        </ol>
+        <p>Você encontrará uma descrição de cada um desses elementos como um subcapítulo separado neste manual. A maioria dos controles possui dicas de ferramentas (tool tips); descrições curtas que aparecem quando você passa o mouse sobre eles por um segundo. [cite: 2]</p>
+
+        <h3 id="area-visualizacao-editor">3.1. Área de Visualização/Editor</h3>
+        <p>Esta área é tanto para visualizar fractais quanto para editá-los em tempo real. A maneira mais simples e intuitiva de editar um fractal é arrastar ou girar um dos controles visíveis sobre o fractal (geralmente em forma de triângulos). No entanto, existem também muitas outras maneiras precisas de modificar uma chama fractal. [cite: 2]</p>
+
+        <h4 id="botoes-rapidos-topo">3.1.1. Botões Rápidos na parte superior da área de visualização</h4>
+        <p>Esses botões controlam principalmente as opções de visualização/edição. [cite: 2]</p>
+        <ul>
+            <li><strong>3.1.1.1. Exibir/ocultar efeito de variação (Display/hide variation effect):</strong> Exibe a contribuição da transformação atualmente selecionada (na área de Transformações) na forma de uma grade transformada. Por exemplo, se a transformação atual for uma rotação, ela mostrará uma grade rotacionada. Se houver transformações não lineares (também conhecidas como variações ou "plugins"), a grade exibida pode mudar/deformar muito mais. [cite: 2]</li>
+            <li><strong>3.1.1.2. Exibir/ocultar transparência (Display/hide transparency):</strong> Ativa ou desativa a renderização de visualização com fundo transparente. Observe que isso afeta apenas a exibição da visualização e não a configuração de transparência da chama em si. [cite: 2]</li>
+            <li><strong>3.1.1.3. Edição fina (Fine edit):</strong> Ativa ou desativa a "edição fina". Edição fina significa que as mudanças são menos sensíveis ao mouse ou touchpad, o que permite editar com um nível mais alto de detalhe. [cite: 2]</li>
+            <li><strong>3.1.1.4. Tempo real (Realtime):</strong> Ativa ou desativa a renderização progressiva da visualização. Renderização progressiva significa que a imagem começa a renderizar em qualidade muito baixa e melhora com o tempo. Geralmente, isso funciona bem e permite uma edição fluida. Em máquinas mais lentas (por exemplo, notebooks), isso pode causar uma carga pesada e, em alguns fractais, pode causar cintilação. Desativá-lo produzirá uma visualização de renderização de uma qualidade inferior (não progressiva). [cite: 2]</li>
+            <li><strong>3.1.1.5. Barra de progresso (Progress bar):</strong> A barra de progresso indica o progresso da renderização nos seguintes casos: [cite: 2]
+                <ul>
+                    <li>Atualizando a Visualização usando o botão "Renderizar visualização da imagem" (Render image preview button). [cite: 2]</li>
+                    <li>Renderizando uma imagem ou filme usando o botão "Renderizar imagem/filme" (Render image/movie button). [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>3.1.1.6. Ativar/desativar grade (Turn grid on/off):</strong> Ativa ou desativa uma grade que pode ajudar a alinhar os controles. Observe que esta grade pode ser movida (consulte "Editar visualização dos controles" - Edit view of the controls), portanto, destina-se ao alinhamento de controle, não ao alinhamento de imagem. [cite: 2]</li>
+            <li><strong>3.1.1.7. Ativar/desativar guias (Turn guides on/off):</strong> Ativa ou desativa "guias artísticas" para: [cite: 2]
+                <ul>
+                    <li>Ponto central (center point). [cite: 2]</li>
+                    <li>Regra dos terços (rule of thirds). [cite: 2]</li>
+                    <li>Proporção áurea (golden ratio). [cite: 2]</li>
+                </ul>
+                que podem ajudar a encontrar a posição/visualização correta da câmera. [cite: 2]
+            </li>
+            <li><strong>3.1.1.8. Estilo dos controles do editor (Style of editor controls):</strong> Você pode selecionar um dos seguintes estilos de controles do editor: [cite: 2]
+                <ul>
+                    <li>eixo (axis). [cite: 2]</li>
+                    <li>mira (crosshair). [cite: 2]</li>
+                    <li>retângulo (rectangle). [cite: 2]</li>
+                    <li>triângulo (triangle) (padrão). [cite: 2]</li>
+                    <li>oculto (hidden). [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>3.1.1.9. Alternar controles monocromáticos/coloridos (Toggle monochrome/colored controls):</strong> Por padrão, cada controle é desenhado em sua própria cor para torná-lo mais distinguível. Às vezes, isso pode distrair você do fractal. Usando esta opção, você pode mudar para uma exibição monocromática menos intrusiva dos controles. [cite: 2]</li>
+            <li><strong>3.1.1.10. Alternar pós-transformação (Toggle post transform):</strong> Alternância rápida para alternar entre a edição da pós-transformação afim e a transformação afim regular. Explicação mais longa: As transformações são executadas na seguinte ordem: [cite: 2]
+                <ol>
+                    <li>transformação afim (affine transform). [cite: 2]</li>
+                    <li>transformações não lineares (nonlinear transforms). [cite: 2]</li>
+                    <li>pós-transformação afim (affine post-transform). [cite: 2]</li>
+                </ol>
+                Na área de visualização, você pode editar a transformação afim ou a pós-transformação afim movendo os controles visuais com o mouse ou touchpad. Este botão permite que você alterne facilmente entre essas duas opções. [cite: 2]
+            </li>
+        </ul>
+
+        <h4 id="botoes-rapidos-direita">3.1.2. Botões rápidos à direita da área de visualização</h4>
+        <p>Esses botões controlam principalmente o tipo de edição e a atualização da visualização. [cite: 2]</p>
+        <ul>
+            <li><strong>3.1.2.1. Habilitar modo de edição de visualização (Enable view editing mode):</strong> Neste modo, você altera as configurações da câmera (visualização) ao arrastar o mouse. [cite: 2]
+                <ul>
+                    <li>Usando a roda do mouse, você pode dar zoom in/out. [cite: 2]</li>
+                    <li>Arrastando o mouse com o botão esquerdo pressionado, você move a câmera. [cite: 2]</li>
+                    <li>Arrastando o mouse para a direita ou esquerda com o botão direito pressionado, você gira a câmera. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>3.1.2.2. Modo de mover triângulos (Move triangles mode):</strong> Neste modo, você edita a transformação afim ou pós-afim ao arrastar o mouse. [cite: 2]
+                <ul>
+                    <li>Usando a roda do mouse, você pode aumentar/diminuir a escala. [cite: 2]</li>
+                    <li>Arrastando o mouse com o botão esquerdo pressionado, você move o controle, causando uma translação. [cite: 2]</li>
+                    <li>Arrastando o mouse para a direita ou esquerda com o botão direito pressionado, você gira o controle, causando uma rotação. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>3.1.2.3. Modo de rotação de triângulos (Rotate triangles mode):</strong> Este modo é semelhante ao modo de mover triângulos, mas você está restrito a rotações. A rotação é feita arrastando o mouse para a direita ou esquerda enquanto pressiona o botão esquerdo do mouse. [cite: 2]</li>
+            <li><strong>3.1.2.4. Modo de escala de triângulos (Scale triangles mode):</strong> Este modo é semelhante ao modo de mover triângulos, mas você está restrito a aumentar/diminuir a escala. Esta operação é feita arrastando o mouse para a direita ou esquerda enquanto pressiona o botão esquerdo do mouse. [cite: 2]</li>
+            <li><strong>3.1.2.5. Habilitar edição de ponto livre (Enable free point editing):</strong> Neste modo, você pode editar livremente a transformação afim arrastando os três pontos de canto dos controles de triângulo. Dessa forma, você pode criar facilmente uma combinação livre de translação, rotação e cisalhamento. [cite: 2]</li>
+            <li><strong>3.1.2.6. Editar visualização dos controles (Edit view of the controls):</strong> Neste modo, você edita a aparência dos controles. Isso não altera a chama; apenas como os controles se parecem. Pode ser usado para ver controles que estão fora da janela, movendo-os ou diminuindo sua escala. Também controla a sensibilidade dos controles; aumente a escala para um posicionamento mais preciso. [cite: 2]
+                <ul>
+                    <li>Usando a roda do mouse, ou arrastando o mouse para a esquerda ou direita com o botão direito pressionado, você pode aumentar/diminuir a escala deles. [cite: 2]</li>
+                    <li>Arrastando o mouse com o botão esquerdo pressionado, você move os controles. [cite: 2]</li>
+                </ul>
+                Consulte "Ativar/desativar grade" (Turn grid on/off) acima. [cite: 2]
+            </li>
+            <li><strong>3.1.2.7. Editar ponto focal (Edit focus point):</strong> Edita o ponto focal (parâmetros FocusX, FocusY e FocusZ na aba "DOF/Bokeh → DOF") usando o mouse. [cite: 2]
+                <ul>
+                    <li>Arrastando o mouse com o botão esquerdo pressionado, você altera os parâmetros FocusX e FocusY. [cite: 2]</li>
+                    <li>Usando a roda do mouse, você altera o parâmetro FocusZ. [cite: 2]</li>
+                </ul>
+            </li>
+            <li><strong>3.1.2.8. Plano de edição afim XY (Affine XY edit plane):</strong> Define o plano de edição atual para a edição da transformação afim como o plano x-y. A edição de transformações afins ocorre em um plano, a configuração padrão é o plano x-y. Ao editar fractais 2D "clássicos", o plano x-y é o único plano. Mas, ao editar fractais 3D, você pode escolher planos diferentes, a fim de modificar todas as três coordenadas. [cite: 2]</li>
+            <li><strong>3.1.2.9. Plano de edição afim YZ (Affine YZ edit plane):</strong> Define o plano de edição atual para a edição da transformação afim como o plano y-z. [cite: 2]</li>
+            <li><strong>3.1.2.10. Plano de edição afim ZX (Affine ZX edit plane):</strong> Define o plano de edição atual para a edição da transformação afim como o plano z-x. [cite: 2]</li>
+            <li><strong>3.1.2.11. Visualização do Denoiser de IA (AI Denoiser preview):</strong> Aplica o denoiser de IA atualmente selecionado (OptiX ou OIDN) e o exibe na visualização. Esta função usa uma visualização dividida para permitir que você compare a imagem denoised e a imagem original. No lado esquerdo, você vê a imagem original, no lado direito do indicador de divisão, você vê a imagem denoised. Este botão só aparece se um denoiser de IA estiver selecionado na aba "Anti-Aliasing/Filtro" (Anti-Aliasing/Filter tab). Esta função usa a visualização atual. Portanto, é recomendável renderizar novamente a visualização em maior qualidade antes de invocá-la. [cite: 2]</li>
+            <li><strong>3.1.2.12. Visualização de renderização externa (External render preview):</strong> Abre uma visualização progressiva destacada adicional; funciona especialmente bem quando você está usando dois monitores. [cite: 2]</li>
+            <li><strong>3.1.2.13. Renderizar visualização da imagem (Render image preview):</strong> Renderiza novamente a visualização atual com um nível de qualidade muito maior. Isso pode levar algum tempo. A barra de progresso na parte superior da área de visualização mostra o progresso da visualização. Se a renderização sólida estiver ativada, haverá um pequeno atraso depois que a barra de progresso atingir 100% antes que o resultado seja exibido. Esta é uma função muito importante no fluxo de trabalho de edição de fractais, porque certas mudanças de parâmetros não causam uma renderização completa da imagem, pois isso seria muito lento. Em vez disso, após tais mudanças de parâmetros, uma versão bruta na memória da última visualização à qual a mudança de parâmetro é aplicada é usada. Isso é especialmente útil quando a renderização progressiva está desativada (consulte o botão "Tempo real" - Realtime), onde a visualização tem qualidade muito baixa. Portanto, ao ajustar as cores, é recomendável renderizar novamente a visualização em maior qualidade usando este botão antes de alterar as configurações. Como esta função é de tamanha importância, ela foi colocada em um local proeminente. [cite: 2]</li>
+        </ul>
+
+        <h4 id="botoes-rapidos-esquerda">3.1.3. Botões rápidos à esquerda da área de visualização</h4>
+        <p>Nesta área, você encontra alguns botões rápidos para acessar outros módulos do JWildfire e os botões "Desfazer/Refazer" (Undo/Redo). [cite: 2]</p>
+        <ul>
+            <li><strong>3.1.3.1. Renderizador interativo (Interactive renderer):</strong> Este é um atalho para o Renderizador Interativo. Ele abre o Renderizador Interativo ou o traz para o primeiro plano. Ele não serve para nenhuma outra função e não carregará, por exemplo, a chama atual no Renderizador Interativo. Isso foi intencional. [cite: 2]</li>
+            <li><strong>3.1.3.2. Criador de Filmes Fácil (Easy Movie Maker):</strong> Abre o Criador de Filmes Fácil. Adiciona automaticamente a chama atualmente carregada como o primeiro keyframe dentro do Criador de Filmes Fácil. [cite: 2]</li>
+            <li><strong>3.1.3.3. Navegador de chamas (Flame Browser):</strong> Abre o Navegador de Chamas. [cite: 2]</li>
+            <li><strong>3.1.3.4. Renderização GPU (GPU render):</strong> Abre o módulo de renderização GPU. Importa automaticamente a chama atualmente selecionada para o módulo de renderização GPU e começa a renderizar a chama. [cite: 2]</li>
+            <li><strong>3.1.3.5. Desfazer (Undo):</strong> Reverte a última alteração na chama atualmente selecionada. Cada chama tem seu próprio histórico de desfazer. Portanto, desfazer uma alteração não alternará entre as chamas. Observe que o histórico de desfazer não é salvo junto com as chamas, então ele é perdido quando você sai do JWildfire. [cite: 2]</li>
+            <li><strong>3.1.3.6. Refazer (Redo):</strong> Repete a última alteração desfeita na chama atualmente selecionada. [cite: 2]</li>
+            <li><strong>3.1.3.7. SShot (Snapshot):</strong> Cria um instantâneo (snapshot) da chama atual. Esta é uma cópia idêntica com um novo histórico de desfazer. [cite: 2]</li>
+            <li><strong>3.1.3.8. Título (Title):</strong> Define o título da chama atual. Este é um bom lugar para colocar informações de direitos autorais ou adicionar seu nome (como autor da obra de arte). Você pode definir um título padrão para as chamas criadas usando o botão "Novo do zero" (New from Scratch), definindo a propriedade <code>tinaDefaultNewFlameTitle</code> na janela de Preferências. [cite: 2]</li>
+            <li><strong>3.1.3.9. Sólido (Solid) (anteriormente chamado "3D"):</strong> Alterna entre renderização "clássica" e renderização sólida. A renderização sólida basicamente funciona tratando cada amostra da chama fractal como uma partícula sólida. A soma de todas essas partículas forma uma forma sólida maior. Isso funciona apenas para certos tipos de fractais de chama. Pode falhar se a estrutura for muito fina ou for, em geral, muito "caótica" ou muito borrada. A renderização sólida pode ser usada para criar coisas realmente incomuns e interessantes. [cite: 2]</li>
+            <li><strong>3.1.3.10. Controles de animações ligar/desligar (Animations controls on/off):</strong> Usando este botão, você pode ligar ou desligar os controles de animação. Você pode configurar sua preferência para esta configuração na janela de Preferências. [cite: 2]</li>
+            <li><strong>3.1.3.11. Modo GPU ligar/desligar (GPU-mode on/off):</strong> Este botão só está disponível quando a renderização GPU é suportada em seu sistema. É um interruptor para ligar ou desligar o modo GPU. O modo GPU ajuda você a integrar a renderização GPU em seu processo artístico. Quando ativado, ele altera o comportamento do JWildfire das seguintes maneiras: - os geradores de chamas aleatórias tentam evitar recursos que não são suportados pela renderização GPU (que usa heurísticas e atualmente é limitada) - a função "Renderizar" (Render) do editor principal usa automaticamente a GPU para renderização (sem a necessidade de transferir a chama para a janela separada do renderizador GPU) - a função "Renderizar Visualização" (Preview-Render) (botão na área inferior direita da área de visualização) também usa a GPU - existe um filtro GPU implícito para a lista de variações, então, ao criar novos fractais, você pode selecionar apenas variações que são suportadas na GPU. Observe que o modo GPU não afeta a visualização em tempo real, que é usada para edição. Você pode alterar o estado inicial do modo GPU ajustando a propriedade <code>tinaGpuModeDefaultEnabled</code> na janela de Preferências. [cite: 2]</li>
+        </ul>
+
+        <h3 id="faixa-miniaturas">3.2. Faixa de Miniaturas</h3>
+        <p>A faixa de miniaturas contém miniaturas de todas as chamas que você está editando atualmente. Após iniciar o programa, algumas chamas aleatórias são geradas e exibidas na faixa de miniaturas. Você pode editar/visualizar qualquer chama da miniatura simplesmente clicando duas vezes (ou clicando com o botão direito) nela. Se você quiser retornar a uma chama anterior, basta clicar duas vezes na miniatura da outra chama. Cada chama na faixa de miniaturas tem seu próprio histórico de desfazer. [cite: 3]</p>
+
+        <h4>3.2.1. Selecionando chamas na faixa de miniaturas</h4>
+        <p>Cada chama na faixa de miniaturas tem uma pequena caixa de seleção atribuída no canto superior direito. Ao alterar o valor desta caixa de seleção, você altera o estado selecionado da miniatura. A seleção de chamas individuais é importante apenas para salvar e excluir. Ao pressionar o botão direito do mouse sobre esta caixa de seleção, você pode abrir um menu pop-up para alterar a seleção de todas as chamas dentro da faixa de miniaturas: [cite: 3]</p>
+        <ul>
+            <li><strong>Alternar tudo (Toggle all):</strong> inverte a seleção de todas as chamas. [cite: 3]</li>
+            <li><strong>Desselecionar tudo (Deselect all):</strong> define todas as chamas para o estado desselecionado. [cite: 3]</li>
+        </ul>
+        <p>Assim, uma maneira de selecionar todas as chamas é desselecioná-las todas e depois inverter a seleção. [cite: 3]</p>
+
+        <h4>3.2.2. Excluindo chamas na faixa de miniaturas</h4>
+        <p>Cada chama na faixa de miniaturas também tem um pequeno botão de exclusão atribuído no canto superior direito. Ao pressionar este botão, você pode excluir a chama correspondente da faixa de miniaturas. Como isso não pode ser desfeito, um pop-up aparecerá para confirmar a ação. Ao pressionar o botão direito do mouse sobre este botão, você pode abrir um menu pop-up para excluir um número de chamas da faixa de miniaturas: [cite: 3]</p>
+        <ul>
+            <li><strong>Remover selecionadas (Remove selected):</strong> exclui todas as chamas que estão selecionadas (a caixa de seleção correspondente está marcada) da faixa de miniaturas. [cite: 3]</li>
+            <li><strong>Remover todas (Remove all):</strong> esvazia a faixa de miniaturas. [cite: 3]</li>
+        </ul>
+
+        <h3 id="configuracoes-chama">3.3. Configurações da chama</h3>
+        <p>Nesta guia principal, você pode editar as configurações no nível da chama fractal. A maioria dessas configurações afetará o resultado final de forma global, mas não afetará a estrutura do próprio fractal. Por exemplo, você pode alterar as configurações de visualização ou a coloração final, mas não a forma em si ou quais detalhes são calculados. [cite: 3]</p>
+
+        <h4 id="aba-camera">3.3.1. Aba da Câmera</h4>
+        <p>Com esses controles, você pode controlar a visualização da câmera. Você pode girar e mover a câmera livremente e dar zoom in/out. Fractais de chama "clássicos" são planos (2D); eles não têm profundidade. Basicamente, os parâmetros Roll, CentreX, CentreY e Zoom/Pixels por unidade se aplicam a eles. Para fractais 3D, há muito mais controles. Mas, você pode "misturá-los", é claro. Então você pode aplicar todos os parâmetros a qualquer fractal e também girar uma chama 2D no espaço ou aplicar uma distorção de perspectiva a ela. [cite: 3]</p>
+        <ul>
+            <li><strong>3.3.1.1. Roll:</strong> Ângulo de rolagem da câmera em graus. Gira em torno do eixo z virtual e também se aplica a fractais 2D. [cite: 3]</li>
+            <li><strong>3.3.1.2. Pitch:</strong> Ângulo de inclinação da chama em graus. Gira a chama em torno do seu eixo x. [cite: 3]</li>
+            <li><strong>3.3.1.3. Yaw:</strong> Ângulo de guinada da chama em graus. Gira a chama em torno do seu eixo z. [cite: 3]</li>
+            <li><strong>3.3.1.4. Bank:</strong> Ângulo de inclinação da chama em graus. Gira a chama em torno do seu eixo y. [cite: 3]</li>
+            <li><strong>3.3.1.5. Perspective:</strong> Perspectiva da câmera. Um valor de 0 indica nenhuma perspectiva, enquanto valores mais altos produzem efeitos de perspectiva mais dramáticos. Os valores podem ser negativos para efeitos mais interessantes. [cite: 3]</li>
+            <li><strong>3.3.1.6. CentreX:</strong> Deslocamento (translação) da chama na direção x. [cite: 3]</li>
+            <li><strong>3.3.1.7. CentreY:</strong> Deslocamento (translação) da chama na direção y. [cite: 3]</li>
+            <li><strong>3.3.1.8. Zoom:</strong> Zoom da câmera. [cite: 3]</li>
+            <li><strong>3.3.1.9. Pixels por unidade (Pixels per unit):</strong> Outra medida (clássica) de zoom. "Pixels por unidade" significa quantos pixels são necessários para preencher uma distância numérica de 1.0 (em coordenadas fractais). Quanto maior o valor, mais detalhes (como dar zoom in). [cite: 3]</li>
+            <li><strong>3.3.1.10. CamPosX:</strong> Posição da câmera na direção x. Tem um efeito semelhante ao CentreX para fractais 2D, mas um efeito diferente para fractais 3D. [cite: 3]</li>
+            <li><strong>3.3.1.11. CamPosY:</strong> Posição da câmera na direção y. Tem um efeito semelhante ao CentreY para fractais 2D, mas um efeito diferente para fractais 3D. [cite: 3]</li>
+            <li><strong>3.3.1.12. CamPosZ:</strong> Posição da câmera na direção z. [cite: 3]</li>
+        </ul>
+
+        <h4 id="aba-dof-bokeh">3.3.2. Aba DOF/Bokeh</h4>
+        <p>DOF (Profundidade de Campo) é o embaçamento de partes da chama com base na distância da câmera. Usá-lo é uma decisão pessoal. Algumas pessoas gostam muito (inclusive eu), outras não gostam nem um pouco. Portanto, este subcapítulo descreve um tópico bastante "especial". Bokeh refere-se à forma dos pontos de luz fora de foco em uma câmera real. JWildfire pode simular alguns efeitos bokeh em conjunto com o DOF. [cite: 3]</p>
+        <ul>
+            <li><strong>3.3.2.1. Subaba DOF (DOF subtab):</strong> Esta aba contém algumas das configurações mais básicas relacionadas ao DOF. [cite: 3]
+                <ul>
+                    <li><strong>3.3.2.1.1. Novo DOF (New DOF):</strong> Alterna entre os modos DOF clássico e mais sofisticado (novo). Geralmente, o "novo modo" é recomendado. O modo clássico ainda existe devido à compatibilidade com versões anteriores. [cite: 3]</li>
+                    <li><strong>3.3.2.1.2. Quantidade (Amount):</strong> Quantidade de DOF. Um valor zero significa que não há DOF algum. [cite: 3]</li>
+                    <li><strong>3.3.2.1.3. Área (Area):</strong> Medida da área nítida ao redor do ponto de foco. [cite: 3]</li>
+                    <li><strong>3.3.2.1.4. Expoente (Exponent):</strong> Medida da queda da área nítida ao redor do ponto de foco. [cite: 3]</li>
+                    <li><strong>3.3.2.1.5. Distância da câmera (Camera dist):</strong> Aplica-se apenas ao modo clássico e é uma medida da distância da câmera ao ponto de foco. [cite: 3]</li>
+                    <li><strong>3.3.2.1.6. FocusX:</strong> Posição X do ponto de foco (um ponto nítido). Também pode ser editado interativamente na área de visualização (use o botão "Editar ponto de foco" - Edit focus point button). [cite: 3]</li>
+                    <li><strong>3.3.2.1.7. FocusY:</strong> Posição Y do ponto de foco (um ponto nítido). Também pode ser editado interativamente na área de visualização (use o botão "Editar ponto de foco" - Edit focus point button). [cite: 3]</li>
+                    <li><strong>3.3.2.1.8. FocusZ:</strong> Posição Z do ponto de foco (um ponto nítido). Também pode ser editado interativamente na área de visualização (use o botão "Editar ponto de foco" - Edit focus point button). [cite: 3]</li>
+                </ul>
+            </li>
+            <li><strong>3.3.2.2. Subaba Bokeh (Bokeh subtab):</strong> Nesta aba, você pode selecionar opções para criar estilos de efeitos DOF tipo bokeh. Essas opções não estão disponíveis ao usar renderização sólida. Para renderização sólida, há uma opção para aplicar efeitos pós-bokeh, mas estes são limitados em comparação com as opções encontradas nesta aba. [cite: 3]
+                <ul>
+                    <li><strong>3.3.2.2.1. Forma (Shape):</strong> Seleciona a forma do efeito bokeh. [cite: 3]
+                        <ul>
+                            <li><strong>Bolha (Bubble):</strong> a forma típica e padrão. [cite: 3]</li>
+                            <li><strong>Curva de Cannabis (Cannabiscurve):</strong> algumas formas orgânicas de boa aparência. [cite: 3]</li>
+                            <li><strong>Trevo (Cloverleaf)</strong>. [cite: 3]</li>
+                            <li><strong>Flor (Flower)</strong>. [cite: 3]</li>
+                            <li><strong>Coração (Heart):</strong> pequenos corações, cria belos cartões de Dia dos Namorados. [cite: 3]</li>
+                            <li><strong>NBlur:</strong> tem algumas opções interessantes para criar formas muito diferentes. [cite: 3]</li>
+                            <li><strong>Ruído Perlin (Perlin Noise):</strong> um estilo incomum, mas interessante. [cite: 3]</li>
+                            <li><strong>Retângulo (Rect):</strong> estilo muito simples, mas eficaz. Você também pode criar cenas tipo "chuva" com isso. [cite: 3]</li>
+                            <li><strong>Desfoque Senoidal (SineBlur):</strong> um popular bokeh circular. [cite: 3]</li>
+                            <li><strong>Desfoque Estrela (StarBlur):</strong> pequenas estrelas. [cite: 3]</li>
+                            <li><strong>Torus (Taurus):</strong> outra forma incomum, mas interessante. [cite: 3]</li>
+                            <li><strong>Floco de Neve (Snowflake):</strong> um floco de neve complexo, criado com o algoritmo descrito no artigo "A local cellular model for snow crystal growth" de Clifford A. Reiter. [cite: 3]</li>
+                            <li><strong>SubChama (SubFlame):</strong> Esta é a opção mais versátil: você pode usar qualquer outro fractal como estilo bokeh. [cite: 3]</li>
+                        </ul>
+                    </li>
+                    <li><strong>3.3.2.2.2. Escala (Scale):</strong> Escala global das formas bokeh. [cite: 3]</li>
+                    <li><strong>3.3.2.2.3. Rotação (Rotate):</strong> Ângulo de rotação global das formas bokeh. [cite: 3]</li>
+                    <li><strong>3.3.2.2.4. Desvanecimento (Fade):</strong> Queda global das formas bokeh. [cite: 3]</li>
+                    <li><strong>3.3.2.2.5. Parâmetros específicos da forma (Shape specific parameters):</strong> Dependendo da forma bokeh, existem parâmetros adicionais. A maioria deles são os mesmos da variação de mesmo nome. Por exemplo, o estilo bokeh "Torus" tem um parâmetro N (que é o número de cantos). A variação "torus" tem o mesmo parâmetro. Nem todos os parâmetros de uma variação são expostos ao estilo bokeh de mesmo nome. [cite: 3]</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

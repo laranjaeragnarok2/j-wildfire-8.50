@@ -14,11 +14,11 @@ O JWildfire é uma aplicação baseada em Java que pode ser executada em diverso
 
 Aqui estão alguns exemplos visuais do tipo de arte que pode ser criada com o JWildfire:
 
-![Descrição da Imagem 1](caminho/para/sua/imagem1.png)
+![Exemplo de Flame](lib/Captura%20de%20tela%202025-05-25%20043110.png)
 
-![Descrição da Imagem 2](caminho/para/sua/imagem2.jpg)
+![Outro Exemplo](lib/Captura%20de%20tela%202025-05-25%20043153.png)
 
-![Descrição da Imagem 3](caminho/para/sua/imagem3.gif)
+![Outro Exemplo](lib/Captura%20de%20tela%202025-05-25%20043231.png)
 
 ---
 
